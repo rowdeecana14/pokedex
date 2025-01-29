@@ -11,6 +11,8 @@ export default function PokemonList({
 }: Readonly<{ pokemons: FullPokemonType[] }>) {
   const [isLoading, setIsLoading] = useState(true);
 
+  const pokedex = new URL(`/src/assets/pokedex.svg`, import.meta.url).href;
+
   useEffect(() => {
     setIsLoading(false);
   }, []);
@@ -23,7 +25,14 @@ export default function PokemonList({
         <Container maxWidth="lg" sx={{ marginTop: "6rem" }}>
           <Box marginBottom={6}>
             <Typography variant="h3" className="title">
-              Random P<i className="title-pokeball"></i>
+              Random P
+              <i
+                className="title-pokeball"
+                style={{
+                  backgroundImage: `url('${pokedex}')`,
+                  backgroundRepeat: "no-repeat",
+                }}
+              ></i>
               kemons
             </Typography>
           </Box>

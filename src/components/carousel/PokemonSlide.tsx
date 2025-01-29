@@ -10,6 +10,8 @@ import Divider from "./Divider";
 export default function PokemonSlide({
   pokemon,
 }: Readonly<{ pokemon: FullPokemonType }>) {
+  const pokeball = new URL(`/src/assets/pokeball.svg`, import.meta.url).href;
+
   const size: PokemonSize = {
     size: "medium",
     height: 14,
@@ -106,17 +108,17 @@ export default function PokemonSlide({
           }}
         >
           {/* Blurred Background Image */}
-          <Box
-            sx={{
+          <img
+            src={pokeball}
+            alt="Pokeball"
+            style={{
               position: "absolute",
               top: 0,
               left: "1rem",
               width: "100%",
               height: "100%",
-              backgroundImage: `url(../../src/assets/pokeball.svg)`,
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-              backgroundPosition: "center right",
+              objectFit: "cover", // This is equivalent to backgroundSize: 'cover'
+              objectPosition: "right center", // This is equivalent to backgroundPosition: 'center right'
               opacity: 0.1,
               zIndex: -1,
             }}

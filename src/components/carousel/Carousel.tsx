@@ -14,7 +14,6 @@ export default function Carousel({
   pokemons,
 }: Readonly<{ pokemons: FullPokemonType[] }>) {
   const [isLoading, setIsLoading] = useState(true);
-
   const progressCircle = useRef<SVGSVGElement>(null);
   const progressContent = useRef<HTMLSpanElement>(null);
 

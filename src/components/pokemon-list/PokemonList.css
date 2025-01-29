@@ -2,8 +2,6 @@
   display: inline-block;
   height: 0.6em;
   width: 0.6em;
-  background-image: url(../../src/assets/pokedex.svg);
-  background-repeat: no-repeat;
 }
 
 .title {
