@@ -1,4 +1,4 @@
-import { Grid, Button, Container, Box, Typography, Stack } from "@mui/material";
+import { Grid, Box } from "@mui/material";
 import styles from "./HeroSection.module.css";
 import { PokemonSubType } from "../../utils/types/PokemonTypes";
 import { formatString } from "../../utils/helpers/formatString";

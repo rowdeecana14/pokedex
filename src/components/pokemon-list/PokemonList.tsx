@@ -1,7 +1,6 @@
 import "./PokemonList.css";
 
 import { Box, Grid, Container, Typography } from "@mui/material";
-import CatchingPokemonIcon from "@mui/icons-material/CatchingPokemon";
 import { useState, useEffect } from "react";
 import { FullPokemonType } from "../../utils/types/PokemonTypes";
 import PokemonCard from "../pokemon-card/PokemonCard";

@@ -1,11 +1,6 @@
-import React, { MouseEvent } from 'react';
+import { MouseEvent } from 'react';
 import { Fab, Box, useScrollTrigger, Zoom } from '@mui/material';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
-
-interface ScrollTopProps {
-  children: React.ReactElement;
-  window?: () => Window;
-}
 
 export default function ScrollTopButton() {
   const trigger = useScrollTrigger({

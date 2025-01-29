@@ -6,7 +6,6 @@ import Loader from "../components/loader/Loader";
 import { useState, useEffect } from "react";
 import { getRamdomPokemons } from "../store/Api";
 import {
-  InitialPokemonType,
   FullPokemonType,
 } from "../utils/types/PokemonTypes";
 

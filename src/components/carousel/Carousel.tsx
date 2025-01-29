@@ -1,5 +1,5 @@
-import React, { useRef, useState, useEffect } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { useRef, useState, useEffect } from "react";
+import { SwiperClass, Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -18,15 +18,19 @@ export default function Carousel({
   const progressCircle = useRef<SVGSVGElement>(null);
   const progressContent = useRef<HTMLSpanElement>(null);
 
-  const onAutoplayTimeLeft = (s: any, time: number, progress: number) => {
+  const onAutoplayTimeLeft = (
+    _: SwiperClass,
+    timeLeft: number,
+    percentage: number
+  ) => {
     if (progressCircle.current) {
       progressCircle.current.style.setProperty(
         "--progress",
-        String(1 - progress)
-      );
+        String(1 - percentage)
+      ); // Use percentage here
     }
     if (progressContent.current) {
-      progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+      progressContent.current.textContent = `${Math.ceil(timeLeft / 1000)}s`; // Use timeLeft here
     }
   };
 

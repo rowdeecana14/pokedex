@@ -1,5 +1,4 @@
 import PokemonList from "../components/pokemon-list/PokemonList";
-import Carousel from "../components/carousel/Carousel";
 
 import { useState, useEffect } from "react";
 import { getPokemons, getPokemon } from "../store/Api";
