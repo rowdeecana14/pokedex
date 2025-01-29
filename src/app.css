@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #091143;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif !important;
+  background: radial-gradient(circle at center,  #5a618a, #091143);
+
+  &::-webkit-scrollbar {
+    width: 1rem;               
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #060B28;        
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #2F5AFF;    
+    border-radius: .5rem;       
+    border: 0.25rem solid #060B28;  
+  }
+}

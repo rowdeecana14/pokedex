@@ -1,0 +1,93 @@
+.heroSection {
+  background: linear-gradient(180deg, #ee8328 0%, #e14318 100%);
+  position: relative;
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 25rem;
+    height: 25rem;
+    background: url('../../assets/background-pokeball.svg') no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &::before {
+    left: -12.5rem;
+  }
+
+  &::after {
+    right: -12.5rem;
+  }
+
+  @media (max-width: 31.25rem) {
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.heroDivider {
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 13.25rem;
+    margin: 0 auto;
+  }
+
+  &::before {
+    background: linear-gradient(180deg,
+        rgba(255, 255, 255, 0) 0%,
+        #ffffff 100%);
+  }
+
+  &::after {
+    background: linear-gradient(180deg,
+        #ffffff 0%,
+        rgba(255, 255, 255, 0) 100%);
+  }
+
+  svg {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  @media (max-width: 900px) {
+    position: static;
+    transform: initial;
+    flex-direction: row;
+    align-items: center;
+    margin: 2rem 0;
+
+    &::before,
+    &::after {
+      width: 13.25rem;
+      height: 1px;
+    }
+
+    &::before {
+      background: linear-gradient(270deg,
+          #ffffff 0%,
+          rgba(255, 255, 255, 0) 100%);
+    }
+
+    &::after {
+      background: linear-gradient(90deg,
+          #ffffff 0%,
+          rgba(255, 255, 255, 0) 100%);
+    }
+  }
+}
