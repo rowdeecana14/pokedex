@@ -1,4 +1,3 @@
-import { MouseEvent } from 'react';
 import { Fab, Box, useScrollTrigger, Zoom } from '@mui/material';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
