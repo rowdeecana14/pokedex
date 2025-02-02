@@ -37,7 +37,7 @@ export default function HomePage() {
       {isLoading ? (
           <Loader />
       ) : (
-          <Container sx={{marginBottom:"2rem"}}>
+          <Container sx={{marginBottom:"5rem"}}>
             <Carousel pokemons={pokemons} />
             <PokemonRandom pokemons={pokemons} />
           </Container>

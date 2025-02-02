@@ -1,0 +1,38 @@
+.custom-pagination button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0.13rem solid rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+.custom-pagination div.MuiPaginationItem-ellipsis {
+  color: rgb(255, 255, 255);
+}
+
+.custom-pagination button.Mui-selected {
+  background: rgb(47, 90, 255);
+  border: 0.13rem solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+
+.custom-pagination button.Mui-selected:hover {
+  background: rgb(227, 77, 26);
+}
+
+.custom-pagination button.MuiPaginationItem-previousNext {
+  background: none;
+  color: inherit; /* Inherit text color */
+  border: none; /* Remove border */
+}
+
+.custom-pagination button.MuiPaginationItem-previousNext svg {
+  width: 2em !important;
+}
+
+.custom-pagination button.MuiPaginationItem-previousNext {
+  outline: none;
+}

@@ -1,7 +1,12 @@
-export async function getPokemons() {
+interface IPagination {
+  offset: number;
+  limit: number;
+}
+
+export async function getPokemons(payload: IPagination) {
   try {
     const response = await fetch(
-      "https://pokeapi.co/api/v2/pokemon?offset=0&limit=500"
+      `https://pokeapi.co/api/v2/pokemon?offset=${payload.offset}&limit=${payload.limit}`
     );
     const data = await response.json();
 
