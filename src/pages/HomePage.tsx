@@ -1,10 +1,10 @@
-import PokemonList from "../components/pokemon-list/PokemonList";
+import PokemonRandom from "../components/pokemon-random/PokemonRandom";
 import Carousel from "../components/carousel/Carousel";
 import { Container } from "@mui/material";
 import Loader from "../components/loader/Loader";
 
 import { useState, useEffect } from "react";
-import { getRamdomPokemons } from "../store/Api";
+import { getRandomPokemons } from "../store/Api";
 import {
   FullPokemonType,
 } from "../utils/types/PokemonTypes";
@@ -15,7 +15,7 @@ export default function HomePage() {
 
   useEffect(() => {
     const getData = async () => {
-      const response = await getRamdomPokemons();
+      const response = await getRandomPokemons();
 
       if (!response.success) {
         return [];
@@ -39,7 +39,7 @@ export default function HomePage() {
       ) : (
           <Container sx={{marginBottom:"2rem"}}>
             <Carousel pokemons={pokemons} />
-            <PokemonList pokemons={pokemons} />
+            <PokemonRandom pokemons={pokemons} />
           </Container>
       )}
     </>

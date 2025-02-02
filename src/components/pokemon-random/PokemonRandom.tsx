@@ -1,4 +1,4 @@
-import "./PokemonList.css";
+import "./PokemonRandom.css";
 
 import { Box, Grid, Container, Typography } from "@mui/material";
 import { useState, useEffect } from "react";
@@ -6,7 +6,7 @@ import { FullPokemonType } from "../../utils/types/PokemonTypes";
 import PokemonCard from "../pokemon-card/PokemonCard";
 import { pokemonAssets } from "../../utils/helpers/pokemonAssets";
 
-export default function PokemonList({
+export default function PokemonRandom({
   pokemons,
 }: Readonly<{ pokemons: FullPokemonType[] }>) {
   const [isLoading, setIsLoading] = useState(true);
@@ -25,7 +25,7 @@ export default function PokemonList({
         <Container maxWidth="lg" sx={{ marginTop: "6rem" }}>
           <Box marginBottom={6}>
             <Typography variant="h3" className="title">
-              Filter P
+              Random P
               <i
                 className="title-pokeball"
                 style={{

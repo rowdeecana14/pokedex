@@ -56,7 +56,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function Navbar() {
   
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="lg" id="header">
       <Toolbar disableGutters>
         <Box sx={{ mr: 1, flexGrow: 1, alignSelf: "flex-end" }}>
           <NavLink
