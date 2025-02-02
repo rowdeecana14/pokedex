@@ -1,5 +1,5 @@
 import PokemonList from "../components/pokemon-list/PokemonList";
-
+import Loader from "../components/loader/Loader";
 import { useState, useEffect } from "react";
 import { getPokemons, getPokemon } from "../store/Api";
 import {
@@ -41,7 +41,5 @@ export default function FilterPage() {
     });
   }, []);
 
-  return (
-    <>{isLoading ? <h3>loading</h3> : <PokemonList pokemons={pokemons} />}</>
-  );
+  return <>{isLoading ? <Loader /> : <PokemonList pokemons={pokemons} />}</>;
 }
