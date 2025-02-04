@@ -26,10 +26,10 @@ export default function Carousel({
       progressCircle.current.style.setProperty(
         "--progress",
         String(1 - percentage)
-      ); // Use percentage here
+      ); 
     }
     if (progressContent.current) {
-      progressContent.current.textContent = `${Math.ceil(timeLeft / 1000)}s`; // Use timeLeft here
+      progressContent.current.textContent = `${Math.ceil(timeLeft / 1000)}s`;
     }
   };
 

@@ -1,13 +1,10 @@
-import "./Loader.css";
+import "./ScrollLoader.css";
 import { Box, Typography } from "@mui/material";
 
-export default function Loader() {
+export default function ScrollLoader() {
   return (
     <Box
-      className="catch-ball-loader"
-      sx={{
-        height: "calc(100vh - 5.5rem)",
-      }}
+      className="catch-ball-loader" marginTop={5}
     >
       <Box
         sx={{
@@ -23,7 +20,7 @@ export default function Loader() {
             textAlign: "center",
           }}
         >
-          Catching all
+          Catching pokemons
           <span className="dot" style={{ marginLeft: "5px" }}>
             .
           </span>

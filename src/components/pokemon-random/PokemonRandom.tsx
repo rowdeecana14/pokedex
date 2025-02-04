@@ -39,7 +39,7 @@ export default function PokemonRandom({
 
           <Grid
             container
-            rowSpacing={1}
+            rowSpacing={2}
             columnSpacing={2}
             direction="row"
             justifyContent="flex-start"

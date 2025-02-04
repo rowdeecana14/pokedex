@@ -39,7 +39,7 @@ export async function getPokemon(name: string) {
   }
 }
 
-export async function getRandomPokemons(count: number = 20) {
+export async function getRandomPokemons(count: number = 15) {
   try {
     const totalPokemon = 898;
     const randomIds = new Set();

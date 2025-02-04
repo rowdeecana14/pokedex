@@ -1,7 +1,7 @@
 import PokemonRandom from "../components/pokemon-random/PokemonRandom";
 import Carousel from "../components/carousel/Carousel";
 import { Container } from "@mui/material";
-import Loader from "../components/loader/Loader";
+import FetchLoader from "../components/loader/fetch-loader/FetchLoader";
 
 import { useState, useEffect } from "react";
 import { getRandomPokemons } from "../store/Api";
@@ -35,7 +35,7 @@ export default function HomePage() {
   return (
     <>
       {isLoading ? (
-          <Loader />
+          <FetchLoader />
       ) : (
           <Container sx={{marginBottom:"5rem"}}>
             <Carousel pokemons={pokemons} />

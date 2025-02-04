@@ -19,10 +19,13 @@ export default function PokemonCard({
     width: 12,
   };
 
-  const pokeball = new URL(`/src/assets/pokeball.svg`, import.meta.url).href;
+  const type = new URL(
+    `/src/assets/pokemon-types/${pokemon.types[0].type.name}.svg`,
+    import.meta.url
+  ).href;
 
   return (
-    <Grid item xs={12} sm={6} lg={4} xl={3}>
+    <Grid item xs={12} sm={6} lg={4} xl={4}>
       <Box
         className={classes.cardContainer}
         sx={{
@@ -78,7 +81,7 @@ export default function PokemonCard({
           </Grid>
           <Grid item xs={6} marginBottom={"0.5rem"}>
             <div className={classes.cardImageBackground}>
-              <img src={pokeball} alt="pokeball" />
+              <img src={type} alt="attribute" />
             </div>
             <div className={classes.cardImagePokemon}>
               <img src={assets.pokemonImage} alt={pokemon.name} />

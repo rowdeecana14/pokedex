@@ -1,0 +1,44 @@
+Credits: Carlos Daniel
+
+
+Guesing game feature
+- https://poke-game-tamara.netlify.app/
+- https://github.com/gatamara/pokemon-game
+
+https://github.com/Om-Khot/PokeQuizChallenge
+https://poke-quiz-challenge.vercel.app/start
+
+https://github.com/indraxyz/pokedex
+https://pokedex-nine-khaki.vercel.app/
+
+https://github.com/samrat10000/PokemonFreestyle
+https://github.com/samrat10000/xyz222
+https://xyz222.vercel.app/
+
+
+search
+https://ghost32-pokemon.netlify.app/pokemon
+https://github.com/k99sharma/pokemon-react
+
+
+https://pokenuxt.nuxt.dev/
+https://github.com/KurutoDenzeru/PokeNuxt
+
+
+https://github.com/SuperMoooo/PokeGames
+https://poke-games-nine.vercel.app/pages/strongerOrWeaker
+
+
+https://github.com/Pawit-Widiyantoro/pokemon-guessing-game
+https://pokemon-guessing-game-mu.vercel.app/
+
+
+https://github.com/oArthurCandido/PokeMemo
+https://pokememo.arthurcandido.dev/
+
+https://github.com/VichithLy/pokedex-vue-tailwindcss
+https://pokedex-vue-vlyjm.netlify.app/
+
+
+https://whos-that-pokemon-zeta-sand.vercel.app/
+https://github.com/shreejai/whos_that_pokemon
