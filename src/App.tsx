@@ -7,6 +7,7 @@ import {
 import MainLayout from "./layouts/MainLayout";
 import HomePage from "./pages/HomePage";
 import FilterPage from "./pages/FilterPage";
+import PokemonPage from "./pages/PokemonPage";
 import FavoritePage from "./pages/FavoritePage";
 import NotFoundPage from "./pages/NotFoundPage";
 
@@ -17,6 +18,7 @@ export default function App() {
       <Route path="/" element={<MainLayout />}>
         <Route index element={<HomePage />} />
         <Route path="/filter" element={<FilterPage />} />
+        <Route path="/pokemon" element={<PokemonPage />} />
         <Route path="/favorite" element={<FavoritePage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>

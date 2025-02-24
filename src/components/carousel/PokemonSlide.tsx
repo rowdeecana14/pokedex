@@ -1,6 +1,7 @@
 import { pokemonAssets } from "../../utils/helpers/pokemonAssets";
 import { FullPokemonType, PokemonSize } from "../../utils/types/PokemonTypes";
 import { Grid, Button, Container, Box, Typography, Stack } from "@mui/material";
+import { NavLink } from "react-router-dom";
 
 import { formatString } from "../../utils/helpers/formatString";
 import { formatId } from "../../utils/helpers/formatId";
@@ -76,21 +77,28 @@ export default function PokemonSlide({
               Dragão.
             </Typography>
 
-            <Button
-              variant="outlined"
-              size="large"
-              sx={{
-                marginTop: "1.5rem",
-                color: "#091143",
-                background: "#fff",
-                fontWeight: 700,
-                ":hover": {
-                  color: "#fff",
-                },
-              }}
-            >
-              More Details
-            </Button>
+            <NavLink to="/pokemon" style={{ textDecoration: "none" }}>
+              <Button
+                variant="contained"
+                size="large"
+                sx={{
+                  marginTop: "2rem",
+                  backgroundColor: "#facc15",
+                  color: "black",
+                  fontWeight: "bold",
+                  borderRadius: "2rem",
+                  border: "2px solid transparent",
+                  transition: "all 0.3s ease-in-out",
+                  "&:hover": {
+                    backgroundColor: "#eab308",
+                    borderColor: "#facc15",
+                    boxShadow: "0px 0px 15px 3px rgba(250, 204, 21, 0.7)",
+                  },
+                }}
+              >
+                Catch Me!
+              </Button>
+            </NavLink>
           </Box>
         </Grid>
 
